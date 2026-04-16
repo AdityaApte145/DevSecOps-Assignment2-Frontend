@@ -181,9 +181,7 @@ const App: React.FC = () => {
             <h3 className="text-xl font-bold mb-2">{course.title}</h3>
             
             {/* Course Description */}
-            <p className="mb-3 flex-grow"
-            dangerouslySetInnerHTML={{ __html: course.description }}
-            />
+            <p className="mb-3 flex-grow">{course.description}</p>
             
             {/* Teacher Info */}
             {user?.role === 'student' && course.teacher_name && (

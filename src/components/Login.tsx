@@ -42,7 +42,6 @@ const Login: React.FC<LoginProps> = ({ onLogin, onSwitchToRegister }) => {
               value={credentials.username}
               onChange={(e) => setCredentials({ ...credentials, username: e.target.value })}
             />
-            <div dangerouslySetInnerHTML={{ __html: userInput }} />
           </div>
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
